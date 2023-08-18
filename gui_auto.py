@@ -1,4 +1,5 @@
 import pyautogui
+import subprocess
 
 wh = pyautogui.size()
 
@@ -11,3 +12,5 @@ wh = pyautogui.size()
 # pyautogui.mouseInfo()
 
 pyautogui.click(1773,26)    # minimizes vscode window if it's maximized
+
+subprocess.Popen("start chrome", shell=True)    # opens a new Chrome window
